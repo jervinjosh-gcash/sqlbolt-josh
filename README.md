@@ -19,12 +19,12 @@ Query 3
 ```
 SELECT * FROM north_american_cities
 WHERE longitude < -87.629798
-ORDER BY longitude;
+ORDER BY longitude ASC;
 ```
 
 Query 4
 ```
-SELECT * FROM north_american_cities
+SELECT city, population FROM north_american_cities
 WHERE country LIKE "mexico"
 ORDER BY population DESC
 LIMIT 2;
@@ -32,7 +32,7 @@ LIMIT 2;
 
 Query 5
 ```
-SELECT * FROM north_american_cities
+SELECT city, population FROM north_american_cities
 WHERE country LIKE "United States"
 ORDER BY population DESC
 LIMIT 2 OFFSET 2;
