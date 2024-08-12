@@ -1,7 +1,6 @@
 # sqlbolt-josh
 
-## SQL Review 1 
-
+#### SQL Review 1 
 
 Query 1
 ```
