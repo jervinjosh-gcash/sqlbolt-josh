@@ -19,7 +19,7 @@ Query 3
 ```
 SELECT * FROM north_american_cities
 WHERE longitude < -87.629798
-ORDER BY longitude DESC;
+ORDER BY longitude;
 ```
 
 Query 4
