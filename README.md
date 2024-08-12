@@ -37,3 +37,19 @@ WHERE country LIKE "United States"
 ORDER BY population DESC
 LIMIT 2 OFFSET 2;
 ```
+
+#### SQL Review 2 (Lesson 12)
+
+Query 1
+```
+SELECT director, COUNT() FROM movies
+GROUP BY director;
+```
+
+Query 2
+```
+SELECT director, (SUM(domestic_sales) + SUM(international_sales)) AS Total_Director_Sales FROM movies
+LEFT JOIN boxoffice
+    ON movies.id = boxoffice.movie_id
+GROUP BY director;
+```
